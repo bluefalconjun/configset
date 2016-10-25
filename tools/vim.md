@@ -1,71 +1,51 @@
-_*[Back Home](https://bluefalconjun.github.io)*_
-***  
+set nocompatible
+set showmode
 
-_**~/.vimrc:**_  
+set number
+set ruler
+set mps=(:),{:},[:]
 
-    set nocompatible
-    set showmode
+set ignorecase
+set hlsearch
+set incsearch
+set wrapscan
 
-    set number
-    set ruler
-    set mps=(:),{:},[:]
+set acd
+set ws
+set is
+set magic
+set noic
+set noscs
+set wrap
+set co=120
+set nu
+set nuw=6
+set hls
+"set cul
+set sc
+set smd
+set ru
+set sm
+set mps=(:),{:},[:]
+set et
 
-    set ignorecase
-    set hlsearch
-    set incsearch
-    set wrapscan
+set noswf
+set nobackup
 
-    set acd
-    set ws
-    set is
-    set magic
-    set noic
-    set noscs
-    set wrap
-    set co=120
-    set nu
-    set nuw=6
-    set hls
-    "set cul
-    set sc
-    set smd
-    set ru
-    set sm
-    set mps=(:),{:},[:]
-	set et
+"set enc=utf-8
 
-    set noswf
-    set nobackup
+colorscheme desert
+syntax enable
+syntax on
+set tabstop=4
+set backspace=2
+set showmatch
+"set smartindent
+set shiftwidth=4
+set autoindent
+set ai!
+filetype plugin indent on
+set so=10
 
-    "set enc=utf-8
+":%s/[search]/[replace]/g
 
-    colorscheme desert
-    syntax enable
-    syntax on
-    set tabstop=4
-    set backspace=2
-    set showmatch
-    "set smartindent
-    set shiftwidth=4
-    set autoindent
-    set ai!
-    filetype plugin indent on
-    set so=10
-
-_**useful cmd:**_  
-
-    J: delete current line's break.
-    O/o: create new line before/after current line.
-    $num$cmd: exec cmd for num times.
-    ZZ: save & exit.
-    gg: jump to file start.
-    $numG: jump to num of file or null num ends.
-    CTRL-O/I: jump to previous/next location.
-
-_**Tips:**_
-
-    :%s/[search]/[replace]/g
-
-
-***  
-_*[Back Home](https://bluefalconjun.github.io)*_
