@@ -13,8 +13,7 @@ especially when setup env in Cloud.
 
 -----
  - [install chrome on ubuntu](https://github.com/bluefalconjun/configset/blob/master/system/ubuntu.md)
------
 
 -----
  - [gfwlist for SwitchyOmega](https://github.com/bluefalconjun/configset/blob/master/proxy/gfwlist.txt)
------
+
