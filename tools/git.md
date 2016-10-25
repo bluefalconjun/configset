@@ -23,6 +23,15 @@ _*[Back Home](https://bluefalconjun.github.io)*_
         lg = log
         br = branch
         cm = commit
+    
+    [credential]
+        helper = cache --timeout=3600000 //this is for github to record your username/pwd
+    
+    [url "ssh://username@192.168.100.10:29418"]
+            insteadof = ssh://192.168.100.10
+
+
+
 
 ~/.gitcm.template
 
