@@ -1,8 +1,11 @@
 force_color_prompt=yes
+
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '    
+
 export USE_CCACHE=1
 
-# Aliases
+#Aliases
+
 alias ls='ls -h --color=auto'
 alias ll='ls -l'
 alias la='ls -A'
@@ -23,10 +26,13 @@ export PATH=$PATH:/usr/local/bin
 export EDITOR=vim
 
 #golang related should set as local env
+
 #export GOROOT=/home/junxu/workspace/Backup/golang/go
 #export GOPATH=/home/junxu/workspace/Backup/golang/workspace
 #export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
-# for repo use proxy
+
+#for repo use proxy
+
 #export HTTP_PROXY=http://127.0.0.1:8118
 #export HTTPS_PROXY=http://127.0.0.1:8118

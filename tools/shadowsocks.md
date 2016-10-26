@@ -1,4 +1,4 @@
-_*[Back Home](https://bluefalconjun.github.io)*_  
+
 ***  
 
 **> on Ubuntu (server&client)**  
@@ -79,4 +79,3 @@ _optimize for server
 **[Shadowsocks @ _google playstore_](https://play.google.com/store/apps/details?id=com.github.shadowsocks)**  
 
 ***  
-_*[Back Home](https://bluefalconjun.github.io)*_  
