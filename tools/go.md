@@ -21,6 +21,7 @@
         export PATH=$PATH:$GOPATH/bin
 
  - go path folder structure
+
         bin/
             hello                          # command executable
             outyet                         # command executable
