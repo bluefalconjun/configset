@@ -3,11 +3,11 @@
 
 **> on Ubuntu (server&client)**  
 
-_install the ss server/client in python version._  
+_install the ss server/client from github.com._  
 
-    sudo apt-get install python-pip privoxy
-    sudo pip install shadowsocks
-    sudo pip install -U shadowsocks  //update ss   
+    #>git clone https://github.com/shadowsocks/shadowsocks-libev.git
+    #>./configure; make; make install
+    update from upstream and recompile for update.
 
 _config format for server/client._  
 
@@ -19,6 +19,41 @@ _config format for server/client._
      "password":"xxxxx",  
      "method":"aes-256-cfb",  
     }
+
+
+_use systemd to configure shadowsocks._  
+
+    root:system# cat shadowsocks.service
+    [Unit]
+    Description=Shadowsocks Server
+    After=network.target
+
+    [Service]
+    PermissionsStartOnly=true
+    ExecStart=/usr/local/bin/ss-server -c /etc/ss.cfg -u
+    Restart=always
+
+    [Install]
+    WantedBy=multi-user.target
+    Alias=shadowsocks.service
+
+_user systemd to configure squid http proxy._
+
+    root:system# cat squid.service
+    [Unit]
+    Description=Squids Server
+    After=syslog.target network.target nss-lookup.target
+
+    [Service]
+    Type = forking
+    ExecStart=/usr/sbin/squid -f /etc/squid/squid.conf -d1
+    User=root
+    Restart=always
+    RestartSec=5
+
+    [Install]
+    WantedBy=multi-user.target
+    Alias=squid.service
 
 _use **supervisor** to auto start **ssserver** on host._  
 
