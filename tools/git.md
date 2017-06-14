@@ -21,3 +21,11 @@
         br = branch
         cm = commit
 
+    [commit]
+    #template = ~/.gitcm.template
+
+    [credential]
+        helper = cache --timeout=3600
+        #use git credential-cache exit; to clean cached userpwd.
+        helper = store --file=~/.gitpassword
+        #will use that file to store.
