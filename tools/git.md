@@ -22,7 +22,7 @@
         cm = commit
 
     [commit]
-    #template = ~/.gitcm.template
+        #template = ~/.gitcm.template
 
     [credential]
         helper = cache --timeout=3600
